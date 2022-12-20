@@ -1,0 +1,14 @@
+# 应用名称
+spring:
+  application:
+    name: oauth2-service
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/spring-cloud-demo?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: localhost
+    port: 6379
+server:
+  port: 8080
