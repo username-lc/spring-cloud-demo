@@ -1,6 +1,6 @@
-package com.lc.oauth2.controller;
+package com.lc.cloud.oauth2.controller;
 
-import com.lc.oauth2.service.ImageCodeService;
+import com.lc.cloud.oauth2.service.ImageCodeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

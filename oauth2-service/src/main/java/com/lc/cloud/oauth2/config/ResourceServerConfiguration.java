@@ -1,6 +1,6 @@
-package com.lc.oauth2.config;
+package com.lc.cloud.oauth2.config;
 
-import com.lc.oauth2.security.CustomAuthExceptionHandler;
+import com.lc.cloud.oauth2.security.CustomAuthExceptionHandler;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

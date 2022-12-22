@@ -1,0 +1,5 @@
+service-url:
+  nacos-user-service: http://user-service
+logging:
+  level:
+    com.lc.cloud.*: debug

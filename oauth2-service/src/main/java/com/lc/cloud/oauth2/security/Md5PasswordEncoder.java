@@ -1,4 +1,4 @@
-package com.lc.oauth2.security;
+package com.lc.cloud.oauth2.security;
 
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.security.crypto.password.PasswordEncoder;

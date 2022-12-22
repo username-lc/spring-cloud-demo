@@ -1,6 +1,6 @@
-package com.lc.oauth2.service.impl;
+package com.lc.cloud.oauth2.service.impl;
 
-import com.lc.oauth2.service.ImageCodeService;
+import com.lc.cloud.oauth2.service.ImageCodeService;
 import com.wf.captcha.ArithmeticCaptcha;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

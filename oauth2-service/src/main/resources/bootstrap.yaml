@@ -1,0 +1,16 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: oauth2-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: dev
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        namespace: ${spring.cloud.nacos.discovery.namespace}
+        file-extension: yaml
+      username: nacos
+      password: nacos

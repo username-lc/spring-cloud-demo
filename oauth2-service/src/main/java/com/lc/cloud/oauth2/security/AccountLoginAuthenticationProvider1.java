@@ -1,8 +1,8 @@
-package com.lc.oauth2.security;
+package com.lc.cloud.oauth2.security;
 
-import com.lc.oauth2.LoginException;
-import com.lc.oauth2.service.ImageCodeService;
-import com.lc.oauth2.service.impl.UserDetailsServiceImpl;
+import com.lc.cloud.oauth2.service.ImageCodeService;
+import com.lc.cloud.oauth2.LoginException;
+import com.lc.cloud.oauth2.service.impl.UserDetailsServiceImpl;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationProvider;

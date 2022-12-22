@@ -1,7 +1,7 @@
-package com.lc.oauth2.security;
+package com.lc.cloud.oauth2.security;
 
 import com.alibaba.fastjson.JSON;
-import com.lc.oauth2.ResultResponse;
+import com.cl.cloud.core.response.ResultResponse;
 import org.apache.commons.codec.CharEncoding;
 import org.springframework.http.MediaType;
 import org.springframework.security.core.AuthenticationException;

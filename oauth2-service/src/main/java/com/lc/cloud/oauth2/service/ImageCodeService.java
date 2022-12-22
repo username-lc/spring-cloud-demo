@@ -1,4 +1,4 @@
-package com.lc.oauth2.service;
+package com.lc.cloud.oauth2.service;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;

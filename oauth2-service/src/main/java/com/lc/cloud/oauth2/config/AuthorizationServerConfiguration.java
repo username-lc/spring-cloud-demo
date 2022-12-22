@@ -1,4 +1,4 @@
-package com.lc.oauth2.config;
+package com.lc.cloud.oauth2.config;
 
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;

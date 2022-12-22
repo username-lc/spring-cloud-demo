@@ -1,4 +1,4 @@
-package com.lc.oauth2;
+package com.lc.cloud.oauth2;
 
 import org.springframework.security.core.AuthenticationException;
 

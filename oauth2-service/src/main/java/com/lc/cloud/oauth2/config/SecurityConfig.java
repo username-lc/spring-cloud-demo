@@ -1,9 +1,9 @@
-package com.lc.oauth2.config;
+package com.lc.cloud.oauth2.config;
 
 
-import com.lc.oauth2.security.*;
-import com.lc.oauth2.service.ImageCodeService;
-import com.lc.oauth2.service.impl.UserDetailsServiceImpl;
+import com.lc.cloud.oauth2.security.*;
+import com.lc.cloud.oauth2.service.ImageCodeService;
+import com.lc.cloud.oauth2.service.impl.UserDetailsServiceImpl;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

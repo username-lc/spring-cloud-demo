@@ -1,4 +1,4 @@
-package com.lc.oauth2.security;
+package com.lc.cloud.oauth2.security;
 
 import com.alibaba.fastjson.JSON;
 import lombok.AllArgsConstructor;
