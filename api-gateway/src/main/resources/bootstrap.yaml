@@ -1,0 +1,31 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: dev
+        group: SPRING_CLOUD_DEMO_GROUP #要想使用gateway进行请求转发，所有的微服务实例与gateway服务实例在nacos中必须是同一个namesapce和同一个group。
+    gateway:
+      #      discovery:
+      #        locator: #自动的路由生成
+      #          #表明gateway开启服务注册和发现的功能，并且spring cloud gateway自动根据服务发现为每一个服务创建了一个router，这个router将以服务名开头的请求路径转发到对应的服务
+      #          enabled: true
+      #          #是将请求路径上的服务名配置为小写（因为服务注册的时候，向注册中心注册时将服务名转成大写的了
+      #          lowerCaseServiceId: true
+      routes: #自定义的路由生成
+        - id: user  #指定唯一标识
+          uri: lb://user-service   #服务名，实现负载均衡
+          predicates:
+            - Path=/user/** #指定路由规则
+          filters:
+            - StripPrefix= 1   # 转发时去掉第一次路径
+        - id: auth  #指定唯一标识
+          uri: lb://oauth2-service   #服务名，实现负载均衡
+          predicates:
+            - Path=/auth/** #指定路由规则
+          filters:
+            - StripPrefix= 1
