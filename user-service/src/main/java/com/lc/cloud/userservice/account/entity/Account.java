@@ -1,4 +1,4 @@
-package com.lc.oauth2.entity;
+package com.lc.cloud.userservice.account.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

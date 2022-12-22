@@ -1,7 +1,7 @@
-package com.lc.oauth2.mapper;
+package com.lc.cloud.userservice.account.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.lc.oauth2.entity.Account;
+import com.lc.cloud.userservice.account.entity.Account;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

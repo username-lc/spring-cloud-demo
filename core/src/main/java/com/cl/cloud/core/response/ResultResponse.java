@@ -1,8 +1,9 @@
-package com.lc.oauth2;
+package com.cl.cloud.core.response;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
@@ -65,15 +66,3 @@ public class ResultResponse<T> implements Serializable {
     }
 }
 
-interface CommonConst {
-    /**
-     * 成功标记
-     */
-    Integer SUCCESS = 0;
-
-    /**
-     * 失败标记
-     */
-    Integer FAIL = 1;
-
-}
