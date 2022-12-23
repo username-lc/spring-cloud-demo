@@ -23,6 +23,7 @@ public class RedisTokenStoreConfiguration {
         RedisTokenStore redisTokenStore = new RedisTokenStore(redisConnectionFactory);
         //设置redis中token存储中的前缀
         redisTokenStore.setPrefix("AUTH-TOKEN:PAYMENT:");
+        redisTokenStore.setSerializationStrategy(new JacksonRedisTokenStoreSerializationStrategy());
         return redisTokenStore;
     }
 
