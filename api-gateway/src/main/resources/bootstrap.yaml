@@ -1,6 +1,8 @@
 server:
   port: 8088
 spring:
+  profiles:
+    active: dev
   application:
     name: api-gateway
   cloud:
@@ -9,6 +11,15 @@ spring:
         server-addr: localhost:8848
         namespace: dev
         group: SPRING_CLOUD_DEMO_GROUP #要想使用gateway进行请求转发，所有的微服务实例与gateway服务实例在nacos中必须是同一个namesapce和同一个group。
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        namespace: ${spring.cloud.nacos.discovery.namespace}
+        group: ${spring.cloud.nacos.discovery.group}
+        file-extension: yaml
+        shared-configs:
+          - data-id: application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+            group: SPRING_CLOUD_DEMO_GROUP
+            refresh: true
     gateway:
       #      discovery:
       #        locator: #自动的路由生成
